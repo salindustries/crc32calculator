@@ -2,7 +2,7 @@
 
 Collection of cli command to work with CRC32 checksum
 
-# Usage
+## Usage
 
 ```console
 crc32calc provides set of tools for calculating and checking CRC32 checksum.
