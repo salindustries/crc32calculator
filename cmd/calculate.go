@@ -5,7 +5,7 @@
  * Author: Sallehuddin Abdul Latif (sallehuddin@berrypay.com)
  * Company: BerryPay (M) Sdn. Bhd.
  * --------------------------------------
- * Last Modified: Wednesday September 20th 2023 13:37:57 +0800
+ * Last Modified: Wednesday September 20th 2023 14:23:39 +0800
  * Modified By: Sallehuddin Abdul Latif (sallehuddin@berrypay.com)
  * --------------------------------------
  * Copyright (c) 2023 BerryPay (M) Sdn. Bhd.
@@ -53,10 +53,11 @@ func init() {
 }
 
 func doCastagnoli(args []string) {
-	crcSrc := make([]byte, len(args))
+	crcSrc := []byte{}
 	for _, v := range args {
 		crcSrc = append(crcSrc, []byte(v)...)
 	}
+
 	fmt.Printf("CRC32 String: %s\n", crcSrc)
 	fmt.Printf("CRC32 Byte: %d\n", crcSrc)
 	fmt.Printf("CRC32 Hex: %x\n", crcSrc)
